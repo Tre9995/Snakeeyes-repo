@@ -1,0 +1,54 @@
+{
+  "name": "Snakeeyes - Movies & TV Shows",
+  "version": "1.0.0",
+  "author": "Tre9995",
+  "description": "A comprehensive movie and TV shows addon with multiple streaming sources",
+  "icon": "https://raw.githubusercontent.com/Tre9995/Snakeeyes-repo/main/icon.png",
+  "providers": [
+    {
+      "name": "CinemaCity",
+      "url": "cinemacity",
+      "type": "movies,tv",
+      "enabled": true
+    },
+    {
+      "name": "Dooflix",
+      "url": "dooflix",
+      "type": "movies,tv",
+      "enabled": true
+    },
+    {
+      "name": "AllMovieland",
+      "url": "allmovieland",
+      "type": "movies,tv",
+      "enabled": true
+    },
+    {
+      "name": "PureStream",
+      "url": "purestream",
+      "type": "movies,tv",
+      "enabled": true
+    },
+    {
+      "name": "MovieBox (English)",
+      "url": "moviebox-english",
+      "type": "movies,tv",
+      "enabled": true
+    },
+    {
+      "name": "Sinewix",
+      "url": "sinewix",
+      "type": "movies,tv",
+      "enabled": true
+    },
+    {
+      "name": "NetMirror",
+      "url": "netmirror",
+      "type": "movies,tv",
+      "enabled": true
+    }
+  ],
+  "repository": "https://github.com/Tre9995/Snakeeyes-repo",
+  "license": "MIT",
+  "lastUpdated": "2026-05-28"
+}
