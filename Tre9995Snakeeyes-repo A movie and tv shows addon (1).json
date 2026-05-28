@@ -1,0 +1,72 @@
+[
+  {
+    "SnakeEyesAddonLink": "",
+    "PureStreamLink": "https://www.purestream.tv/",
+    "AddonManifestUrl": "",
+    "ProviderName": "CinemaCity",
+    "ProviderUrl": "http://cinemacity.cc/"
+  },
+  {
+    "SnakeEyesAddonLink": "",
+    "PureStreamLink": "https://www.purestream.tv/",
+    "AddonManifestUrl": "",
+    "ProviderName": "Dooflix",
+    "ProviderUrl": "https://dooflixapk.com/"
+  },
+  {
+    "SnakeEyesAddonLink": "",
+    "PureStreamLink": "https://www.purestream.tv/",
+    "AddonManifestUrl": "",
+    "ProviderName": "AllMovieland",
+    "ProviderUrl": "https://www.allmovieland.com/"
+  },
+  {
+    "SnakeEyesAddonLink": "",
+    "PureStreamLink": "https://www.purestream.tv/",
+    "AddonManifestUrl": "",
+    "ProviderName": "PureStream",
+    "ProviderUrl": "https://www.purestream.tv/"
+  },
+  {
+    "SnakeEyesAddonLink": "",
+    "PureStreamLink": "https://www.purestream.tv/",
+    "AddonManifestUrl": "",
+    "ProviderName": "MovieBox (English)",
+    "ProviderUrl": "https://www.movieboxpro.app/"
+  },
+  {
+    "SnakeEyesAddonLink": "",
+    "PureStreamLink": "https://www.purestream.tv/",
+    "AddonManifestUrl": "",
+    "ProviderName": "Sinewix",
+    "ProviderUrl": "https://sinewix.com/"
+  },
+  {
+    "SnakeEyesAddonLink": "",
+    "PureStreamLink": "https://www.purestream.tv/",
+    "AddonManifestUrl": "",
+    "ProviderName": "NetMirror",
+    "ProviderUrl": "https://www.netmirror.online/"
+  },
+  {
+    "SnakeEyesAddonLink": "",
+    "PureStreamLink": "https://www.purestream.tv/",
+    "AddonManifestUrl": "",
+    "ProviderName": "Get TMDB API Key",
+    "ProviderUrl": "https://github.com/Tre9995/Snakeeyes-repo/blob/main/API_SETUP.md#-tmdb-the-movie-database-setup"
+  },
+  {
+    "SnakeEyesAddonLink": "",
+    "PureStreamLink": "https://www.purestream.tv/",
+    "AddonManifestUrl": "",
+    "ProviderName": "Get OMDb API Key",
+    "ProviderUrl": "https://github.com/Tre9995/Snakeeyes-repo/blob/main/API_SETUP.md#-omdb-open-movie-database-setup"
+  },
+  {
+    "SnakeEyesAddonLink": "",
+    "PureStreamLink": "https://www.purestream.tv/",
+    "AddonManifestUrl": "",
+    "ProviderName": "Add keys to your configuration",
+    "ProviderUrl": "https://github.com/Tre9995/Snakeeyes-repo/blob/main/API_SETUP.md#%EF%B8%8F-configuration-methods"
+  }
+]
