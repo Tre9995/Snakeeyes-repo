@@ -1,59 +1,81 @@
 {
   "id": "community.snakeeyes.movies",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Snakeeyes - Movies & TV Shows",
-  "description": "A comprehensive movie and TV shows addon with multiple streaming sources",
+  "description": "A comprehensive movie and TV shows addon with multiple streaming sources. Watch your favorite movies and series from 7+ trusted providers.",
   "types": ["movie", "series"],
   "resources": [
     {
       "name": "stream",
       "types": ["movie", "series"],
       "idPrefixes": ["tt"]
+    },
+    {
+      "name": "catalog",
+      "types": ["movie", "series"]
     }
   ],
   "catalogs": [
     {
       "type": "movie",
-      "id": "snakeeyes-movies"
+      "id": "snakeeyes-movies",
+      "name": "Snakeeyes Movies"
     },
     {
       "type": "series",
-      "id": "snakeeyes-series"
+      "id": "snakeeyes-series",
+      "name": "Snakeeyes Series"
     }
   ],
   "logo": "https://raw.githubusercontent.com/Tre9995/Snakeeyes-repo/main/logo.png",
   "background": "https://raw.githubusercontent.com/Tre9995/Snakeeyes-repo/main/background.png",
   "contactEmail": "support@snakeeyes.addon",
-  "providers": {
-    "sources": [
-      {
-        "name": "CinemaCity",
-        "id": "cinemacity"
-      },
-      {
-        "name": "Dooflix",
-        "id": "dooflix"
-      },
-      {
-        "name": "AllMovieland",
-        "id": "allmovieland"
-      },
-      {
-        "name": "PureStream",
-        "id": "purestream"
-      },
-      {
-        "name": "MovieBox (English)",
-        "id": "moviebox-english"
-      },
-      {
-        "name": "Sinewix",
-        "id": "sinewix"
-      },
-      {
-        "name": "NetMirror",
-        "id": "netmirror"
-      }
-    ]
-  }
+  "behaviorHints": {
+    "configurable": true,
+    "configurationRequired": false
+  },
+  "providers": [
+    {
+      "name": "CinemaCity",
+      "id": "cinemacity",
+      "url": "http://cinemacity.cc",
+      "type": "both"
+    },
+    {
+      "name": "Dooflix",
+      "id": "dooflix",
+      "url": "https://dooflixapk.com",
+      "type": "both"
+    },
+    {
+      "name": "AllMovieland",
+      "id": "allmovieland",
+      "url": "https://www.allmovieland.com",
+      "type": "both"
+    },
+    {
+      "name": "PureStream",
+      "id": "purestream",
+      "url": "https://www.purestream.tv",
+      "type": "both"
+    },
+    {
+      "name": "MovieBox (English)",
+      "id": "moviebox-english",
+      "url": "https://www.movieboxpro.app",
+      "type": "both"
+    },
+    {
+      "name": "Sinewix",
+      "id": "sinewix",
+      "url": "https://sinewix.com",
+      "type": "both"
+    },
+    {
+      "name": "NetMirror",
+      "id": "netmirror",
+      "url": "https://www.netmirror.online",
+      "type": "both"
+    }
+  ]
 }
