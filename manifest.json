@@ -1,12 +1,17 @@
 {
   "id": "community.snakeeyes.movies",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "name": "Snakeeyes - Movies & TV Shows",
-  "description": "A comprehensive movie and TV shows addon with multiple streaming sources. Watch your favorite movies and series from 7+ trusted providers.",
+  "description": "A comprehensive movie and TV shows addon with TMDB and OMDb API integration. Access metadata and legal streaming sources.",
   "types": ["movie", "series"],
   "resources": [
     {
       "name": "stream",
+      "types": ["movie", "series"],
+      "idPrefixes": ["tt"]
+    },
+    {
+      "name": "meta",
       "types": ["movie", "series"],
       "idPrefixes": ["tt"]
     },
@@ -34,48 +39,42 @@
     "configurable": true,
     "configurationRequired": false
   },
-  "providers": [
+  "apiSources": [
     {
-      "name": "CinemaCity",
-      "id": "cinemacity",
-      "url": "http://cinemacity.cc",
+      "name": "TMDB (The Movie Database)",
+      "id": "tmdb",
+      "url": "https://www.themoviedb.org",
+      "type": "both",
+      "requiresApiKey": true,
+      "apiKeyUrl": "https://www.themoviedb.org/settings/api"
+    },
+    {
+      "name": "OMDb API",
+      "id": "omdb",
+      "url": "http://www.omdbapi.com",
+      "type": "both",
+      "requiresApiKey": true,
+      "apiKeyUrl": "http://www.omdbapi.com/apikey.aspx"
+    }
+  ],
+  "freeSources": [
+    {
+      "name": "YouTube",
+      "id": "youtube",
+      "url": "https://www.youtube.com",
       "type": "both"
     },
     {
-      "name": "Dooflix",
-      "id": "dooflix",
-      "url": "https://dooflixapk.com",
+      "name": "Tubi TV",
+      "id": "tubi",
+      "url": "https://tubitv.com",
       "type": "both"
     },
     {
-      "name": "AllMovieland",
-      "id": "allmovieland",
-      "url": "https://www.allmovieland.com",
-      "type": "both"
-    },
-    {
-      "name": "PureStream",
-      "id": "purestream",
-      "url": "https://www.purestream.tv",
-      "type": "both"
-    },
-    {
-      "name": "MovieBox (English)",
-      "id": "moviebox-english",
-      "url": "https://www.movieboxpro.app",
-      "type": "both"
-    },
-    {
-      "name": "Sinewix",
-      "id": "sinewix",
-      "url": "https://sinewix.com",
-      "type": "both"
-    },
-    {
-      "name": "NetMirror",
-      "id": "netmirror",
-      "url": "https://www.netmirror.online",
-      "type": "both"
+      "name": "Public Domain Movies",
+      "id": "publicdomain",
+      "url": "https://publicdomainmovies.info",
+      "type": "movies"
     }
   ]
 }
