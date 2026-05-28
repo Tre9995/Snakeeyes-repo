@@ -1,9 +1,9 @@
 {
+  "id": "snakeeyes-addon",
   "name": "Snakeeyes - Movies & TV Shows",
   "version": "1.0.0",
   "author": "Tre9995",
   "description": "A comprehensive movie and TV shows addon with multiple streaming sources",
-  "icon": "https://raw.githubusercontent.com/Tre9995/Snakeeyes-repo/main/icon.png",
   "providers": [
     {
       "name": "CinemaCity",
