@@ -1,54 +1,59 @@
 {
-  "id": "snakeeyes-addon",
-  "name": "Snakeeyes - Movies & TV Shows",
+  "id": "community.snakeeyes.movies",
   "version": "1.0.0",
-  "author": "Tre9995",
+  "name": "Snakeeyes - Movies & TV Shows",
   "description": "A comprehensive movie and TV shows addon with multiple streaming sources",
-  "providers": [
+  "types": ["movie", "series"],
+  "resources": [
     {
-      "name": "CinemaCity",
-      "url": "cinemacity",
-      "type": "movies,tv",
-      "enabled": true
-    },
-    {
-      "name": "Dooflix",
-      "url": "dooflix",
-      "type": "movies,tv",
-      "enabled": true
-    },
-    {
-      "name": "AllMovieland",
-      "url": "allmovieland",
-      "type": "movies,tv",
-      "enabled": true
-    },
-    {
-      "name": "PureStream",
-      "url": "purestream",
-      "type": "movies,tv",
-      "enabled": true
-    },
-    {
-      "name": "MovieBox (English)",
-      "url": "moviebox-english",
-      "type": "movies,tv",
-      "enabled": true
-    },
-    {
-      "name": "Sinewix",
-      "url": "sinewix",
-      "type": "movies,tv",
-      "enabled": true
-    },
-    {
-      "name": "NetMirror",
-      "url": "netmirror",
-      "type": "movies,tv",
-      "enabled": true
+      "name": "stream",
+      "types": ["movie", "series"],
+      "idPrefixes": ["tt"]
     }
   ],
-  "repository": "https://github.com/Tre9995/Snakeeyes-repo",
-  "license": "MIT",
-  "lastUpdated": "2026-05-28"
+  "catalogs": [
+    {
+      "type": "movie",
+      "id": "snakeeyes-movies"
+    },
+    {
+      "type": "series",
+      "id": "snakeeyes-series"
+    }
+  ],
+  "logo": "https://raw.githubusercontent.com/Tre9995/Snakeeyes-repo/main/logo.png",
+  "background": "https://raw.githubusercontent.com/Tre9995/Snakeeyes-repo/main/background.png",
+  "contactEmail": "support@snakeeyes.addon",
+  "providers": {
+    "sources": [
+      {
+        "name": "CinemaCity",
+        "id": "cinemacity"
+      },
+      {
+        "name": "Dooflix",
+        "id": "dooflix"
+      },
+      {
+        "name": "AllMovieland",
+        "id": "allmovieland"
+      },
+      {
+        "name": "PureStream",
+        "id": "purestream"
+      },
+      {
+        "name": "MovieBox (English)",
+        "id": "moviebox-english"
+      },
+      {
+        "name": "Sinewix",
+        "id": "sinewix"
+      },
+      {
+        "name": "NetMirror",
+        "id": "netmirror"
+      }
+    ]
+  }
 }
