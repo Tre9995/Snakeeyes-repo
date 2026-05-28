@@ -1,146 +1,16 @@
-const axios = require('axios');
 
-// API Keys - Add your own keys from TMDB and OMDb
-const CONFIG = {
-  tmdbApiKey: process.env.TMDB_API_KEY || 'YOUR_TMDB_API_KEY',
-  omdbApiKey: process.env.OMDB_API_KEY || 'YOUR_OMDB_API_KEY',
-  tmdbBaseUrl: 'https://api.themoviedb.org/3',
-  omdbBaseUrl: 'https://www.omdbapi.com'
-};
-
-// Legal streaming sources
-const sources = {
-  tmdb: {
-    name: 'TMDB - Movie Database',
-    url: 'https://www.themoviedb.org',
-    type: 'both',
-    apiUrl: CONFIG.tmdbBaseUrl
-  },
-  omdb: {
-    name: 'OMDb - Open Movie Database',
-    url: 'https://www.omdbapi.com',
-    type: 'both',
-    apiUrl: CONFIG.omdbBaseUrl
-  },
-  youtube: {
-    name: 'YouTube - Free Movies',
-    url: 'https://www.youtube.com',
-    type: 'both'
-  },
-  tubi: {
-    name: 'Tubi TV - Free Streaming',
-    url: 'https://tubitv.com',
-    type: 'both'
-  },
-  publicdomain: {
-    name: 'Public Domain Movies',
-    url: 'https://publicdomainmovies.info',
-    type: 'movies'
-  }
-};
-
-// Plugin system for extensibility
-const pluginManager = {
-  plugins: [],
-  
-  registerPlugin(plugin) {
-    if (plugin.name && plugin.getStreams) {
-      this.plugins.push(plugin);
-      console.log(`Plugin registered: ${plugin.name}`);
-      return true;
-    }
-    return false;
-  },
-  
-  async getStreamsFromPlugins(type, id) {
-    const streams = [];
-    for (const plugin of this.plugins) {
-      try {
-        const pluginStreams = await plugin.getStreams(type, id);
-        if (pluginStreams && pluginStreams.length > 0) {
-          streams.push(...pluginStreams);
-        }
-      } catch (error) {
-        console.error(`Plugin ${plugin.name} failed:`, error.message);
-      }
-    }
-    return streams;
-  }
-};
-
-// Helper: Convert IMDb ID to numeric ID for TMDB
-function extractIMDbId(id) {
-  if (id.startsWith('tt')) {
-    return id;
-  }
-  return id;
-}
-
-// Helper: Extract numeric part from IMDb ID
-function getNumericId(imdbId) {
-  const match = imdbId.match(/(\d+)/);
-  return match ? match[1] : imdbId;
-}
-
-// TMDB API handler
-async function getTMDBStreams(id, type) {
-  try {
-    // Validate API key is configured
-    if (CONFIG.tmdbApiKey === 'YOUR_TMDB_API_KEY') {
-      console.warn('⚠️ TMDB API key not configured. Skipping TMDB streams.');
-      return [];
-    }
-
-    const imdbId = extractIMDbId(id);
-    const endpoint = type === 'movie' ? 'movie' : 'tv';
-    
-    // TMDB requires the numeric ID or external_id lookup
-    // Using external_id endpoint for IMDb ID
-    let response;
-    
-    if (imdbId.startsWith('tt')) {
-      // Look up by IMDb ID
-      try {
-        response = await axios.get(
-          `${CONFIG.tmdbBaseUrl}/find/${imdbId}`,
-          {
-            params: {
-              api_key: CONFIG.tmdbApiKey,
-              external_source: 'imdb_id'
-            },
-            timeout: 5000
           }
         );
+{
 
-        if (!response.data.movie_results && !response.data.tv_results) {
-          console.warn(`TMDB: No results found for IMDb ID ${imdbId}`);
-          return [];
-        }
-
-        const tmdbId = response.data.movie_results?.[0]?.id || response.data.tv_results?.[0]?.id;
-        if (!tmdbId) {
-          console.warn(`TMDB: Could not extract TMDB ID for ${imdbId}`);
-          return [];
-        }
-
-        // Get full details using TMDB ID
-        response = await axios.get(
-          `${CONFIG.tmdbBaseUrl}/${endpoint}/${tmdbId}`,
-          {
-            params: {
-              api_key: CONFIG.tmdbApiKey,
-              append_to_response: 'external_ids,watch_providers'
-            },
-            timeout: 5000
           }
         );
       } catch (error) {
-        console.error(`TMDB lookup error for ${imdbId}:`, error.message);
+
         return [];
       }
     } else {
-      // Use numeric ID directly
-      response = await axios.get(
+      // Use 
         `${CONFIG.tmdbBaseUrl}/${endpoint}/${id}`,
         {
           params: {
