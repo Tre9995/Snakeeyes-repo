@@ -50,12 +50,11 @@ const streamHandler = (req, res) => {
   Object.keys(sources).forEach(provider => {
     const source = sources[provider];
     streams.push({
-      title: `${source.name} - Stream`,
-      url: `${source.url}`,
-      sources: [{
-        url: source.url,
-        quality: '1080p'
-      }]
+      title: `${source.name}`,
+      url: source.url,
+      behaviorHints: {
+        notWebReady: false
+      }
     });
   });
 
