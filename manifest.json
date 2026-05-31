@@ -1,0 +1,19 @@
+{
+  "id": "community.snakeeyes.movies",
+  "version": "1.1.0",
+  "name": "Snakeeyes - Movies & TV Shows",
+  "description": "A comprehensive movie and TV shows addon. Access metadata and various streaming sources.",
+  "types": ["movie", "series"],
+  "resources": ["catalog", "meta", "stream"],
+  "catalogs": [
+    { "type": "movie", "id": "snakeeyes-movies", "name": "Snakeeyes Movies" },
+    { "type": "series", "id": "snakeeyes-series", "name": "Snakeeyes Series" }
+  ],
+  "idPrefixes": ["tt"],
+  "logo": "https://raw.githubusercontent.com/Tre9995/Snakeeyes-repo/main/logo.png",
+  "background": "https://raw.githubusercontent.com/Tre9995/Snakeeyes-repo/main/background.png",
+  "behaviorHints": {
+    "configurable": true,
+    "configurationRequired": false
+  }
+}
