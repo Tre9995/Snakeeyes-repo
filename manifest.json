@@ -1,0 +1,21 @@
+{
+  "id": "org.snakeeyes.addon",
+  "version": "1.0.0",
+  "name": "Snakeeyes",
+  "description": "Snakeeyes addon for streams",
+  "logo": "https://raw.githubusercontent.com/Tre9995/Snakeeyes-repo/main/logo.png",
+  "resources": ["stream", "catalog"],
+  "types": ["movie", "series"],
+  "catalogs": [
+    {
+      "id": "snakeeyes_movies",
+      "type": "movie",
+      "name": "Snakeeyes Movies"
+    },
+    {
+      "id": "snakeeyes_series",
+      "type": "series",
+      "name": "Snakeeyes Series"
+    }
+  ]
+}
