@@ -28,6 +28,7 @@ app.get('/stream/:type/:id.json', async (req, res) => {
       name: source.name,
       title: source.name,
       url: source.url.replace('{imdb}', id),
+      externalUrl: source.url.replace('{imdb}', id),
       type: "http"
     }));
     
