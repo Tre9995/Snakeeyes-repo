@@ -1,0 +1,32 @@
+const express = require('express');
+const app = express();
+
+app.get('/manifest.json', (req, res) => {
+  res.json({
+    id: "org.snakeeyes.addon",
+    version: "1.0.0",
+    name: "Snakeeyes",
+    resources: ["stream"],
+    types: ["movie", "series"]
+  });
+});
+
+app.get('/stream/:type/:id.json', async (req, res) => {
+  const { type, id } = req.params;
+  
+  const response = await fetch('https://raw.githubusercontent.com/Tre9995/Snakeeyes-repo/main/sources.json');
+  const data = await response.json();
+  
+  const sources = data[type === 'movie' ? 'movies' : 'series'];
+  
+  const streams = sources.map(source => ({
+    name: "Snakeeyes",
+    title: source.name,
+    externalUrl: source.url.replace('{imdb}', id)
+  }));
+  
+  res.json({ streams });
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT);
