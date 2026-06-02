@@ -1,0 +1,54 @@
+{
+  "movies": [
+    {
+      "name": "2Embed",
+      "url": "https://www.2embed.cc/{imdb}"
+    },
+    {
+      "name": "VidSrc",
+      "url": "https://vidsrc.to/movie/{imdb}"
+    },
+    {
+      "name": "VidEasy",
+      "url": "https://videasy.net/movie/{imdb}"
+    },
+    {
+      "name": "Nortongo",
+      "url": "https://nortongo.com/movie/{imdb}"
+    },
+    {
+      "name": "VidLink",
+      "url": "https://vidlink.pro/movie/{imdb}"
+    },
+    {
+      "name": "SuperEmbed",
+      "url": "https://superembed.stream/movie/{imdb}"
+    }
+  ],
+  "series": [
+    {
+      "name": "2Embed",
+      "url": "https://www.2embed.cc/tv/{imdb}"
+    },
+    {
+      "name": "VidSrc",
+      "url": "https://vidsrc.to/tv/{imdb}"
+    },
+    {
+      "name": "VidEasy",
+      "url": "https://videasy.net/tv/{imdb}"
+    },
+    {
+      "name": "Nortongo",
+      "url": "https://nortongo.com/tv/{imdb}"
+    },
+    {
+      "name": "VidLink",
+      "url": "https://vidlink.pro/tv/{imdb}"
+    },
+    {
+      "name": "SuperEmbed",
+      "url": "https://superembed.stream/tv/{imdb}"
+    }
+  ]
+}
