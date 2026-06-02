@@ -1,0 +1,56 @@
+{
+  "movies": [
+    {
+      "name": "VidLink",
+      "title": "VidLink Pro",
+      "url": "https://vidlink.pro/movie/{imdb}"
+    },
+    {
+      "name": "VidSrc",
+      "title": "VidSrc.to",
+      "url": "https://vidsrc.to/embed/movie/{imdb}"
+    },
+    {
+      "name": "VidSrc.me",
+      "title": "VidSrc.me",
+      "url": "https://vidsrc.me/embed/movie?imdb={imdb}"
+    },
+    {
+      "name": "2Embed",
+      "title": "2Embed",
+      "url": "https://www.2embed.cc/embed/{imdb}"
+    },
+    {
+      "name": "SuperEmbed",
+      "title": "SuperEmbed",
+      "url": "https://multiembed.mov/?video_id={imdb}&tmdb=0"
+    }
+  ],
+  "series": [
+    {
+      "name": "VidLink",
+      "title": "VidLink Pro",
+      "url": "https://vidlink.pro/tv/{imdb}/{s}/{e}"
+    },
+    {
+      "name": "VidSrc",
+      "title": "VidSrc.to",
+      "url": "https://vidsrc.to/embed/tv/{imdb}?s={s}&e={e}"
+    },
+    {
+      "name": "VidSrc.me",
+      "title": "VidSrc.me",
+      "url": "https://vidsrc.me/embed/tv?imdb={imdb}&season={s}&episode={e}"
+    },
+    {
+      "name": "2Embed",
+      "title": "2Embed",
+      "url": "https://www.2embed.cc/embedtv/{imdb}&s={s}&e={e}"
+    },
+    {
+      "name": "SuperEmbed",
+      "title": "SuperEmbed",
+      "url": "https://multiembed.mov/?video_id={imdb}&tmdb=0&s={s}&e={e}"
+    }
+  ]
+}
