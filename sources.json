@@ -1,0 +1,72 @@
+{
+  "movies": [
+    {
+      "name": "YOUR ORIGINAL MOVIE LINK 1",
+      "url": "https://your-original-link.com/movie/{imdb}",
+      "poster": "https://via.placeholder.com/300x450?text=Original+1",
+      "genres": ["Movies"]
+    },
+    {
+      "name": "YOUR ORIGINAL MOVIE LINK 2",
+      "url": "https://your-other-link.com/{imdb}/{tmdb}",
+      "poster": "https://via.placeholder.com/300x450?text=Original+2",
+      "genres": ["Movies"]
+    },
+    {
+      "name": "VidAPI - Movie",
+      "url": "https://vidapi.xyz/embed/movie/{imdb}",
+      "poster": "https://via.placeholder.com/300x450?text=VidAPI",
+      "genres": ["Movies"]
+    },
+    {
+      "name": "2Embed - Movie",
+      "url": "https://www.2embedstream.xyz/embed/movie/{imdb}",
+      "poster": "https://via.placeholder.com/300x450?text=2Embed",
+      "genres": ["Movies"]
+    },
+    {
+      "name": "VidFast - Movie",
+      "url": "https://vidfast.to/embed/movie/{imdb}",
+      "poster": "https://via.placeholder.com/300x450?text=VidFast",
+      "genres": ["Movies"]
+    },
+    {
+      "name": "VidSrc - Movie",
+      "url": "https://vidsrc.domains/embed/movie/{imdb}",
+      "poster": "https://via.placeholder.com?text=VidSrc",
+      "genres": ["Movies"]
+    }
+  ],
+  "series": [
+    {
+      "name": "YOUR ORIGINAL SERIES LINK",
+      "url": "https://your-series-link.com/{imdb}/s{s}/e{e}",
+      "poster": "https://via.placeholder.com/300x450?text=Original",
+      "genres": ["TV Shows"]
+    },
+    {
+      "name": "VidAPI - Series",
+      "url": "https://vidapi.xyz/embed/tv/{imdb}&s={s}&e={e}",
+      "poster": "https://via.placeholder.com/300x450?text=VidAPI",
+      "genres": ["TV Shows"]
+    },
+    {
+      "name": "2Embed - Series",
+      "url": "https://www.2embedstream.xyz/embed/tv/{imdb}/{s}/{e}",
+      "poster": "https://via.placeholder.com/300x450?text=2Embed",
+      "genres": ["TV Shows"]
+    },
+    {
+      "name": "VidFast - Series",
+      "url": "https://vidfast.to/embed/tv/{imdb}/{s}/{e}",
+      "poster": "https://via.placeholder.com/300x450?text=VidFast",
+      "genres": ["TV Shows"]
+    },
+    {
+      "name": "VidSrc - Series",
+      "url": "https://vidsrc.domains/embed/tv/{imdb}?season={s}&episode={e}",
+      "poster": "https://via.placeholder.com/300x450?text=VidSrc",
+      "genres": ["TV Shows"]
+    }
+  ]
+    }
