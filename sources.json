@@ -1,0 +1,88 @@
+{
+  "providers": [
+    {
+      "name": "CinemaCity",
+      "id": "cinemacity",
+      "url": "http://cinemacity.cc",
+      "type": "both",
+      "enabled": true
+    },
+    {
+      "name": "Dooflix",
+      "id": "dooflix",
+      "url": "https://dooflixapk.com",
+      "type": "both",
+      "enabled": true
+    },
+    {
+      "name": "AllMovieland",
+      "id": "allmovieland",
+      "url": "https://www.allmovieland.com",
+      "type": "both",
+      "enabled": true
+    },
+    {
+      "name": "PureStream",
+      "id": "purestream",
+      "url": "https://www.purestream.tv",
+      "type": "both",
+      "enabled": true
+    },
+    {
+      "name": "MovieBox (English)",
+      "id": "moviebox-english",
+      "url": "https://www.movieboxpro.app",
+      "type": "both",
+      "enabled": true
+    },
+    {
+      "name": "Sinewix",
+      "id": "sinewix",
+      "url": "https://sinewix.com",
+      "type": "both",
+      "enabled": true
+    },
+    {
+      "name": "NetMirror",
+      "id": "netmirror",
+      "url": "https://www.netmirror.online",
+      "type": "both",
+      "enabled": true
+    },
+    {
+      "name": "Vidzee",
+      "id": "vidzee",
+      "url": "https://vidzee.wtf",
+      "type": "both",
+      "enabled": true
+    },
+    {
+      "name": "VidSrc",
+      "id": "vidsrc",
+      "url": "https://vidsrc.to",
+      "type": "both",
+      "enabled": true
+    },
+    {
+      "name": "VidLink",
+      "id": "vidlink",
+      "url": "https://vidlink.pro",
+      "type": "both",
+      "enabled": true
+    },
+    {
+      "name": "2Embed",
+      "id": "2embed",
+      "url": "https://www.2embed.stream",
+      "type": "both",
+      "enabled": true
+    },
+    {
+      "name": "EmbedSU",
+      "id": "embedsu",
+      "url": "https://embed.su",
+      "type": "both",
+      "enabled": true
+    }
+  ]
+}
