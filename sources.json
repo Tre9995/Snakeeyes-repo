@@ -1,0 +1,66 @@
+{
+  "movies": [
+    {
+      "name": "FibWatch",
+      "title": "FibWatch",
+      "url": "https://fibwatch.art/movie/{imdb}"
+    },
+    {
+      "name": "CineFreak",
+      "title": "CineFreak",
+      "url": "https://cinefreak.net/movie/{imdb}"
+    },
+    {
+      "name": "MLSBD",
+      "title": "MLSBD",
+      "url": "https://mlsbd.co/movie/{imdb}"
+    },
+    {
+      "name": "EmWBD",
+      "title": "EmWBD",
+      "url": "https://emwbd.cyou/movie/{imdb}"
+    },
+    {
+      "name": "CineplexBD",
+      "title": "CineplexBD",
+      "url": "https://cineplexbd.net/movie/{imdb}"
+    },
+    {
+      "name": "FMFTP",
+      "title": "FMFTP",
+      "url": "https://fmftp.net/movie/{imdb}"
+    }
+  ],
+  "series": [
+    {
+      "name": "FibWatch",
+      "title": "FibWatch",
+      "url": "https://fibwatch.art/tv/{imdb}/{s}/{e}"
+    },
+    {
+      "name": "CineFreak",
+      "title": "CineFreak",
+      "url": "https://cinefreak.net/tv/{imdb}/{s}/{e}"
+    },
+    {
+      "name": "MLSBD",
+      "title": "MLSBD",
+      "url": "https://mlsbd.co/tv/{imdb}/{s}/{e}"
+    },
+    {
+      "name": "EmWBD",
+      "title": "EmWBD",
+      "url": "https://emwbd.cyou/tv/{imdb}/{s}/{e}"
+    },
+    {
+      "name": "CineplexBD",
+      "title": "CineplexBD",
+      "url": "https://cineplexbd.net/tv/{imdb}/{s}/{e}"
+    },
+    {
+      "name": "FMFTP",
+      "title": "FMFTP",
+      "url": "https://fmftp.net/tv/{imdb}/{s}/{e}"
+    }
+  ]
+}
