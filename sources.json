@@ -31,19 +31,9 @@
       "url": "https://vidsrc.mov/embed/movie/{imdb}"
     },
     {
-      "name": "MoviesAPI",
-      "title": "MoviesAPI",
-      "url": "https://moviesapi.club/movie/{imdb}"
-    },
-    {
       "name": "VidSrc.me (v2)",
       "title": "VidSrc.me (v2)",
       "url": "https://vidsrc-embed.ru/embed/movie?imdb={imdb}"
-    },
-    {
-      "name": "2Embed.cc",
-      "title": "2Embed.cc",
-      "url": "https://www.2embed.cc/embed/{imdb}"
     }
   ],
   "series": [
@@ -78,19 +68,9 @@
       "url": "https://vidsrc.mov/embed/tv/{imdb}/{s}/{e}"
     },
     {
-      "name": "MoviesAPI",
-      "title": "MoviesAPI",
-      "url": "https://moviesapi.club/tv/{imdb}/{s}/{e}"
-    },
-    {
       "name": "VidSrc.me (v2)",
       "title": "VidSrc.me (v2)",
       "url": "https://vidsrc-embed.ru/embed/tv?imdb={imdb}&season={s}&episode={e}"
-    },
-    {
-      "name": "2Embed.cc",
-      "title": "2Embed.cc",
-      "url": "https://www.2embed.cc/embedtvfull/{imdb}?s={s}&e={e}"
     }
   ]
 }
