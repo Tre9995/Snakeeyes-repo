@@ -35,7 +35,6 @@
       "title": "MoviesAPI",
       "url": "https://moviesapi.club/movie/{imdb}"
     },
-
     {
       "name": "VidSrc.me (v2)",
       "title": "VidSrc.me (v2)",
@@ -45,7 +44,7 @@
       "name": "2Embed.cc",
       "title": "2Embed.cc",
       "url": "https://www.2embed.cc/embed/{imdb}"
-    },
+    }
   ],
   "series": [
     {
@@ -83,7 +82,6 @@
       "title": "MoviesAPI",
       "url": "https://moviesapi.club/tv/{imdb}/{s}/{e}"
     },
-
     {
       "name": "VidSrc.me (v2)",
       "title": "VidSrc.me (v2)",
@@ -93,6 +91,6 @@
       "name": "2Embed.cc",
       "title": "2Embed.cc",
       "url": "https://www.2embed.cc/embedtvfull/{imdb}?s={s}&e={e}"
-    },
-  ]
     }
+  ]
+}
