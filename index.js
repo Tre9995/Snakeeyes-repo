@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const fetch = require('node-fetch');
 const app = express();
 
 app.use(cors());
@@ -26,7 +27,7 @@ app.get('/manifest.json', (req, res) => {
 app.get('/catalog/:type/:id.json', async (req, res) => {
   try {
     const { type } = req.params;
-    const response = await fetch('https://raw.githubusercontent.com/Tre9995/Snakeeyes-repo/main/catalog.json');
+    const response = await fetch('https://raw.githubusercontent.com/Tre9995/Snakeeyes-repo/main/sources.json');
     const data = await response.json();
     const items = data[type === 'movie' ? 'movies' : 'series'] || [];
     res.json({ metas: items });
@@ -69,6 +70,11 @@ app.get('/stream/:type/:id.json', async (req, res) => {
     console.error('Stream error:', error);
     res.status(500).json({ streams: [], error: error.message });
   }
+});
+
+// ── Health Check ───────────────────────────────────────────
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok' });
 });
 
 // ── Start ─────────────────────────────────────────────────
